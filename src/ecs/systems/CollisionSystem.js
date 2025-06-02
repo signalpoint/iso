@@ -1,5 +1,5 @@
 // src/ecs/systems/CollisionSystem.js
-import { TILE_W, TILE_H } from '../../config/tileSize.js';
+//import { TILE_W, TILE_H } from '../../config/tileSize.js';
 
 export const CollisionSystem = (walkable) => (ents) => {
   for (const e of ents) {
