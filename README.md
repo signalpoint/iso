@@ -15,7 +15,7 @@ npm run build
 # helpers
 ```
 ## make a quick zip backup (excluding node_modules folder)
-zip -r $(date +%Y-%m-%d--%H-%M-%S).iso.zip iso -x "*node_modules*"
+zip -r $(date +%Y-%m-%d--%H-%M-%S).iso.zip iso -x "*node_modules*" -x "*.git*"
 
 ## add identity to ssh agent
 ssh-add ~/.ssh/id_EXAMPLE
