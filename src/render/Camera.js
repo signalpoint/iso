@@ -49,11 +49,11 @@ export class Camera {
 //      x: (sx - this.pos.x * TILE_W / 2) * this.zoom + this.canvas.width  / 2,
 //      y: (sy - this.pos.y * TILE_H / 2) * this.zoom + this.canvas.height / 2
 
-//      x: (sx - this.pos.x * TILE_W / 2) + this.canvas.width  / 2,
-//      y: (sy - this.pos.y * TILE_H / 2) + this.canvas.height / 2
+//      x: (sx - this.pos.x) + this.canvas.width  / 2,
+//      y: (sy - this.pos.y) + this.canvas.height / 2
 
-      x: (sx - this.pos.x) + this.canvas.width  / 2,
-      y: (sy - this.pos.y) + this.canvas.height / 2
+      x: (sx - this.pos.x * TILE_W / 2) + this.canvas.width  / 2,
+      y: (sy - this.pos.y * TILE_H / 2) + this.canvas.height / 2
 
     };
   }
