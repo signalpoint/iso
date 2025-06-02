@@ -101,7 +101,7 @@ camera.pos.y = player.position.y;
 //engine.use(DebugSystem(player, debugEl, camera, grid));
 engine.use(DebugSystem(player, debugEl, mouse, grid, camera));
 engine.use(InputSystem(kb, 6)); // 6 tiles per second (tweak to taste)
-engine.use(MovementSystem);
+//engine.use(MovementSystem);
 //engine.use(CollisionSystem(walkable));
 engine.use(CollisionSystemSlide(walkable));
 
