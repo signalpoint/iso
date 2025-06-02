@@ -110,7 +110,7 @@ export class IsoMap {
     for (let cy = 0; cy < rows; cy++) {
       for (let cx = 0; cx < cols; cx++) {
         const key = `${cx},${cy}`;
-        if (!this.chunks.has(key)) this.chunks.set(key, this.#renderChunk(cx, cy, camera));
+        if (!this.chunks.has(key)) this.chunks.set(key, this.#renderChunk(cx, cy));
 
         // crude visibility test – skip if way off‑screen
         const centre = camera.worldToScreen({ x: (cx + 0.5) * CHUNK, y: (cy + 0.5) * CHUNK });
