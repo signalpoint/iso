@@ -22,7 +22,12 @@ export default {
   ],
   module: {
     rules: [
-      // If you need Babel later, add a rule here.
+      {
+        test: /\.css$/i,                 //  ⟵  all *.css files
+        use: ['style-loader', 'css-loader'],
+        // css‑loader  → resolves @import / url()
+        // style‑loader → injects <style> into <head>
+      }
     ]
   }
 };
